@@ -1,0 +1,195 @@
+:root{
+    /* Primary  colors*/
+    --blue-primary-color:hsl(223, 87%, 63%);
+    /* Secondary */
+    --paleBlue-secondary-color:hsl(223, 100%, 88%);
+    --LightRed-secondary-color:hsl(354, 100%, 66%);
+   
+    /* Neutral */
+    --Gray-Neutral-color: hsl(0, 0%, 59%);
+    --VeryDarkBlue-Neutral-color: hsl(209, 33%, 12%);
+    /* FontsFamily */    
+    --ff:'Libre Franklin', sans-serif;
+    /* Weights */
+    --fw-300:300;
+    --fw-600:600;
+    --fw-700:700;
+}
+
+body{
+    font-size: 20px;
+    font-family: var(--ff);
+    margin: auto;
+}
+.mainBody{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 90vh;
+}
+
+.mainHeader{
+    margin-top: 25%;
+}
+.bandIcon{
+    margin-bottom: 10%;
+}
+.headerText{
+    color:var(--Gray-Neutral-color);
+    font-size: 1.5rem;
+    font-weight: var(--fw-300);
+}
+.blackColor{
+    color: var(--VeryDarkBlue-Neutral-color);
+}
+.subHeaderText{
+    color: var(--VeryDarkBlue-Neutral-color);
+    font-size: 1rem;
+    font-weight: var(--fw-600);
+}
+
+.emailForm{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+#email{
+    color: var(--Gray-Neutral-color);
+    border-color: var(--paleBlue-secondary-color);
+    border-style: solid;
+    border-radius: 25px;
+    width: 75%;
+    justify-self: center;
+    padding: 0.5rem;
+    font-size: 1rem;
+    text-align: center;
+}
+.submitButton{
+    background-color: var(--blue-primary-color);
+    color: white;
+    margin-top: 5%;
+    border-radius: 25px;
+    border-style: none;
+    width: 80%;
+    justify-self: center;
+    padding: 0.8rem;
+}
+.errorText{
+    color: var(--LightRed-secondary-color);
+    font-size: 1.2rem;
+    margin: 4% 0% 15% 0%;
+    visibility: hidden;
+}
+.errorBorderC{
+    border-color: var(--LightRed-secondary-color);
+
+}
+
+.imgBox{}
+.mainImg{
+    height: 15rem;
+    width: 80%;
+}
+
+footer{}
+.iconBox{
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    margin: 2% 0%;
+}
+.facebookIcon{
+    color: var(--blue-primary-color);
+    text-align: center;
+    margin-right: 5%;
+    background-color: white;
+    border-radius: 50%;
+    border-style: solid;
+    padding: 3px;
+    border-color: var(--paleBlue-secondary-color);
+
+}
+.twitterIcon{
+    color: var(--blue-primary-color);
+    text-align: center;
+    margin-right: 5%;
+    background-color: white;
+    border-radius: 50%;
+    border-style: solid;
+    padding: 3px;
+    border-color: var(--paleBlue-secondary-color);
+
+}
+.instagramIcon{
+    color: var(--blue-primary-color);
+    text-align: center;
+    margin-right: 5%;
+    background-color: white;
+    border-radius: 50%;
+    border-style: solid;
+    padding: 3px;
+    border-color: var(--paleBlue-secondary-color);
+
+}
+.copyRight{
+    color:var(--Gray-Neutral-color);
+    font-size: 1rem;
+}
+.facebookIcon:hover , .twitterIcon:hover , .instagramIcon:hover , .submitButton:hover{
+    background-color: var(--paleBlue-secondary-color);
+    
+}
+
+@media screen and (min-width:768px){
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+    }
+
+    .mainHeader{
+        margin-top: 3%;
+    }
+    .bandIcon{
+        margin-bottom: 0%;
+    }
+    .headerText{
+        font-size: 3.5rem;
+        margin: 0px;
+    }
+    .subHeaderText{
+        font-size: 2rem;
+    }
+    .emailForm{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-self: center;
+    }
+    #email{
+        width: 100%;
+        height: 2rem;
+        align-self: center;
+    }
+    .submitButton{
+        padding: 1rem;
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+    .errorText{
+        color: var(--LightRed-secondary-color);
+        font-size: 1.2rem;
+        margin: 4% 0% 15% 0%;
+        visibility: hidden;
+    }
+    .errorBorderC{
+        border-color: var(--LightRed-secondary-color);
+    
+    }
+    
+    .imgBox{}
+    
+    .mainImg{
+        height: 100%;
+        width: 50%;
+}
+}
